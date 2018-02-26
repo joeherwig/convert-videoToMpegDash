@@ -30,11 +30,12 @@ Execute the powershell-script eg with
 The results are stored at the location of the original video source.
 
 # What to do with the mpeg-dash stuff?
-- add dashjs to your website eg via:
+add dashjs to your website eg via:
 `<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>`
 then upload the generated files to your favorite HTTPS-Server and include the HTML Video snippet eg.:
 
-```<video data-dashjs-player="" autoplay="" src="myVideo.mpd" controls="" preload="auto">
+```
+  <video data-dashjs-player="" autoplay="" src="myVideo.mpd" controls="" preload="auto">
     <source src="myVideo.webm" type="video/webm">
     <source src="myVideo.mp4" type="video/mp4">
     Your browser does not support the video tag!
