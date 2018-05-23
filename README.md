@@ -21,17 +21,21 @@ Download the convert-videoToMpegDash.ps1 from this repo and save it to the folde
 # Usage
 Execute the powershell-script eg with
 
-`.\convert-movieToDash.ps1 -original ~\Videos\myVideo.mp4`
+```
+.\convert-movieToDash.ps1 -original ~\Videos\myVideo.mp4
+```
 
 ## Parameter
-`-original` gets the path to the video which should be converted to a MPEG-DASH set.
+`-original` is used to set the path to the video that gets converted to a MPEG-DASH set.
 
 # Result
 The results are stored at the location of the original video source.
 
 # What to do with the mpeg-dash stuff?
 add dashjs to your website eg via:
-`<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>`
+```
+<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>
+```
 then upload the generated files to your favorite HTTPS-Server and include the HTML Video snippet eg.:
 
 ```
